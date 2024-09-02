@@ -182,12 +182,12 @@ const data = {
             "Siak", "Kota Dumai", "Kota Pekanbaru"
         ],
         "kecamatan": {
-            "Kabupaten Bengkalis": [
+            "Bengkalis": [
                 "Bengkalis", "Bantan", "Bathin Solapan", "Bukit Batu",
                 "Mandau", "Pinggir", "Rupat", "Rupat Utara",
                 "Siak Kecil", "Sumatera", "Tebing Tinggi", "Teluk Meranti"
             ],
-            "Kabupaten Indragiri Hilir": [
+            "Indragiri Hilir": [
                 "Batang Tuaka", "Concong", "Enok", "Gaung",
                 "Gaung Anak Serka", "Kateman", "Kempas", "Kemuning",
                 "Keritang", "Kuala Indragiri", "Mandah", "Pelangiran",
@@ -195,13 +195,13 @@ const data = {
                 "Teluk Belengkong", "Tembilahan", "Tembilahan Hulu",
                 "Tempuling"
             ],
-            "Kabupaten Indragiri Hulu": [
+            "Indragiri Hulu": [
                 "Batang Cenaku", "Batang Gangsal", "Batang Peranap",
                 "Lirik", "Lubuk Batu Jaya", "Kelayang", "Kuala Cenaku",
                 "Pasir Penyu", "Peranap", "Rakit Kulim", "Rengat",
                 "Rengat Barat", "Seberida", "Sungai Lala"
             ],
-            "Kabupaten Kampar": [
+            "Kampar": [
                 "XIII Koto Kampar", "Bangkinang", "Bangkinang Kota",
                 "Gunung Sahilan", "Kampa", "Kampar", "Kampar Kiri",
                 "Kampar Kiri Hilir", "Kampar Kiri Hulu", "Kampar Kiri Tengah",
@@ -209,38 +209,38 @@ const data = {
                 "Perhentian Raja", "Rumbio Jaya", "Salo", "Siak Hulu",
                 "Tambang", "Tapung", "Tapung Hilir", "Tapung Hulu"
             ],
-            "Kabupaten Kepulauan Meranti": [
+            "Kepulauan Meranti": [
                 "Merbau", "Pulau Merbau", "Rangsang", "Rangsang Barat",
                 "Rangsang Pesisir", "Tasik Putri Puyu", "Tebing Tinggi"
             ],
-            "Kabupaten Pelalawan": [
+            "Pelalawan": [
                 "Bandar Petalangan", "Bandar Sei Kijang", "Bunut",
                 "Kerumutan", "Kuala Kampar", "Langgam", "Pangkalan Kerinci",
                 "Pangkalan Kuras", "Pangkalan Lesung", "Pelalawan",
                 "Teluk Meranti", "Ukui"
             ],
-            "Kabupaten Rokan Hilir": [
+            "Rokan Hilir": [
                 "Bagan Sinembah", "Bagan Sinembah Raya", "Balai Jaya",
                 "Bangko", "Bangko Pusako", "Batu Hampar", "Kubu",
                 "Kubu Babussalam", "Pasir Limau Kapas", "Pekaitan",
                 "Pujud", "Rantau Kopar", "Rimba Melintang", "Simpang Kanan",
                 "Sinaboi", "Tanah Putih", "Tanah Putih Tanjung Melawan"
             ],
-            "Kabupaten Kuantan Singingi": [
+            "Kuantan Singingi": [
                 "Benai", "Cerenti", "Gunung Toar", "Inuman",
                 "Hulu Kuantan", "Kuantan Hilir", "Kuantan Hilir Seberang",
                 "Kuantan Mudik", "Kuantan Tengah", "Logas Tanah Darat",
                 "Pangean", "Pucuk Rantau", "Sentajo Raya", "Singingi",
                 "Singingi Hilir"
             ],
-            "Kabupaten Rokan Hulu": [
+            "Rokan Hulu": [
                 "Bangun Purba", "Bonai Darussalam", "Kabun",
                 "Kepenuhan", "Kepenuhan Hulu", "Kunto Darussalam",
                 "Pagaran Tapah Darussalam", "Pendalian IV Koto",
                 "Rambah", "Rambah Hilir", "Rambah Samo", "Rokan IV Koto",
                 "Tambusai", "Tambusai Utara", "Tandun", "Ujung Batu"
             ],
-            "Kabupaten Siak": [
+            "Siak": [
                 "Bunga Raya", "Dayun", "Kandis", "Kerinci Kanan",
                 "Koto Gasip", "Lubuk Dalam", "Mempura", "Minas",
                 "Pusako", "Sabak Auh", "Siak", "Sungai Apit",
