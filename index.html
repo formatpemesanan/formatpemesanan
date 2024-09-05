@@ -82,6 +82,17 @@ src="https://www.facebook.com/tr?id=1568429837435406&ev=PageView&noscript=1"
                 style="width: 92%; height: 60px;"></textarea>
             <button type="submit">Kirim ke WhatsApp</button>
         </form>
+<script>
+    // Menangkap pengiriman form
+    document.getElementById('addressForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah form dari pengiriman otomatis
+
+        // Melacak event custom saat form di-submit
+        fbq('trackCustom', 'AddressFormSubmitted', {
+            content_name: 'Form Pengisian Alamat',
+            form_status: 'submitted'
+    });
+</script>
     </div>
 
     <script src="data.js"></script>
