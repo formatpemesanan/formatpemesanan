@@ -129,6 +129,11 @@ src="https://www.facebook.com/tr?id=4091289557769067&ev=PageView&noscript=1"
                 message += `${key}: ${value}%0A`;
             }
             window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
+            fbq('track', 'Lead', {
+                content_name: 'Formulir Pendaftaran',
+                content_category: 'Pendaftaran',
+                value: 100,000,
+                currency: 'IDR'
         });
     </script>
 </body>
