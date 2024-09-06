@@ -129,12 +129,18 @@ src="https://www.facebook.com/tr?id=4091289557769067&ev=PageView&noscript=1"
                 message += `${key}: ${value}%0A`;
             }
             window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-            
-            fbq('track', 'Lead', {
-                content_name: 'Formulir Pendaftaran',
-                content_category: 'Pendaftaran',
-                value: 100,000,
-                currency: 'IDR'
+                fbq('trackCustom', 'SubmitFormAlamat', {
+                formName: 'Formulir Pemesanan',
+                buttonText: 'Kirim ke WhatsApp',
+                fields: {
+                    nama: document.querySelector('input[name="nama"]').value,
+                    noWa: document.querySelector('input[name="noWa"]').value,
+                    provinsi: document.getElementById('provinsi').value,
+                    kabupaten: document.getElementById('kabupaten').value,
+                    kecamatan: document.getElementById('kecamatan').value,
+                    alamatLengkap: document.querySelector('textarea[name="alamatLengkap"]').value,
+                    patokanRumah: document.querySelector('textarea[name="patokanRumah"]').value
+                }
         });
     </script>
 </body>
