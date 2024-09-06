@@ -78,7 +78,6 @@
             <button type="submit">Kirim ke WhatsApp</button>
         </form>
     </div>
-
     <script src="data.js"></script>
     <script>
         const provinsiSelect = document.getElementById('provinsi');
@@ -124,21 +123,6 @@
                 message += `${key}: ${value}%0A`;
             }
             window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-            
-            // Melacak peristiwa submit form menggunakan Meta Pixel
-            fbq('trackCustom', 'SubmitFormAlamat', {
-                formName: 'Formulir Pemesanan',
-                buttonText: 'Kirim ke WhatsApp',
-                fields: {
-                    nama: document.querySelector('input[name="nama"]').value,
-                    noWa: document.querySelector('input[name="noWa"]').value,
-                    provinsi: document.getElementById('provinsi').value,
-                    kabupaten: document.getElementById('kabupaten').value,
-                    kecamatan: document.getElementById('kecamatan').value,
-                    alamatLengkap: document.querySelector('textarea[name="alamatLengkap"]').value,
-                    patokanRumah: document.querySelector('textarea[name="patokanRumah"]').value
-                }
-            });
         });
     </script>
   </body>
