@@ -16,8 +16,9 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '4091289557769067'); // Ganti YOUR_PIXEL_ID dengan ID Pixel Anda
+      fbq('init', '4091289557769067');
       fbq('track', 'PageView');
+      fbq('track', 'Purchase');
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=4091289557769067&ev=PageView&noscript=1"
@@ -30,15 +31,6 @@
         <form id="registrationForm">
                         <input type="text" name="nama" placeholder="Nama" required>
             <input type="tel" name="noWa" placeholder="Nomor WhatsApp" pattern="[0-9]*" inputmode="numeric" required>
-            <script>
-                document.querySelector('input[name="nama"]').addEventListener('input', function() {
-                    fbq('track', 'Lead', { content_name: 'Nama', value: this.value });
-                });
-
-                document.querySelector('input[name="noWa"]').addEventListener('input', function() {
-                    fbq('track', 'Lead', { content_name: 'Nomor WhatsApp', value: this.value });
-                });
-            </script>
             <select name="provinsi" id="provinsi" required>
                 <option value="">Pilih Provinsi</option>
                 <option value="Bali">Bali</option>
