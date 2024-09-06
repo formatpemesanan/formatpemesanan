@@ -28,8 +28,17 @@
     <div class="container">
         <h1>Formulir Pemesanan</h1>
         <form id="registrationForm">
-            <input type="text" name="nama" placeholder="Nama" required>
+                        <input type="text" name="nama" placeholder="Nama" required>
             <input type="tel" name="noWa" placeholder="Nomor WhatsApp" pattern="[0-9]*" inputmode="numeric" required>
+            <script>
+                document.querySelector('input[name="nama"]').addEventListener('input', function() {
+                    fbq('track', 'Lead', { content_name: 'Nama', value: this.value });
+                });
+
+                document.querySelector('input[name="noWa"]').addEventListener('input', function() {
+                    fbq('track', 'Lead', { content_name: 'Nomor WhatsApp', value: this.value });
+                });
+            </script>
             <select name="provinsi" id="provinsi" required>
                 <option value="">Pilih Provinsi</option>
                 <option value="Bali">Bali</option>
