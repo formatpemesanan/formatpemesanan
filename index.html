@@ -108,22 +108,27 @@
                 });
             }
         });
+    document.querySelector('input[name="noWa"]').addEventListener('input', function (e) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
 
-        document.querySelector('input[name="noWa"]').addEventListener('input', function (e) {
-            this.value = this.value.replace(/[^0-9]/g, '');
-        });
-      
-        document.getElementById('registrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            let message = 'Kak Admin,Saya Ingin Pesan Barangnya Dengan Alamat Rumah Saya Sebagai berikut :                                                                                                                                     ';
-            for (let [key, value] of formData.entries()) {
-                message += `${key}: ${value}%0A`;
-            }
-          fbq('track', 'Purchase', {currency: 'IDR', value: 100000});
-          setTimeout(function() {
-          window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-          }, 500);
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        let message = 'Kak Admin, Saya Ingin Pesan Barangnya Dengan Alamat Rumah Saya Sebagai berikut:%0A';
+
+        for (let [key, value] of formData.entries()) {
+            message += `${key}: ${value}%0A`;
+        }
+
+        // Track the purchase event using Facebook Pixel
+        fbq('track', 'Purchase', {currency: 'IDR', value: 100000});
+
+        // Open the WhatsApp chat after a delay
+        setTimeout(function() {
+            window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
+        }, 500);
+    });
     </script>
   </body>
 </html>
