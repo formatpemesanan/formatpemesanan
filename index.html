@@ -114,27 +114,16 @@
         document.querySelector('input[name="noWa"]').addEventListener('input', function (e) {
             this.value = this.value.replace(/[^0-9]/g, '');
         });
-
-  document.getElementById('submitBtn').addEventListener('click', function(e) {
-      e.preventDefault();
-
-      // Menyiapkan data form
-      const form = document.getElementById('registrationForm');
-      const formData = new FormData(form);
-      let message = 'Kak Admin, Saya Ingin Pesan Barangnya Dengan Alamat Rumah Saya Sebagai berikut : ';
-      for (let [key, value] of formData.entries()) {
-          message += `${key}: ${value}%0A`;
-      }
-
-      // Mengirim event purchase ke Meta Pixel
-      fbq('track', 'Purchase', {currency: 'IDR', value: 100000}); // Sesuaikan currency dan value
-
-      // Delay sebentar untuk memastikan tracking event tercatat sebelum redirect
-      setTimeout(function() {
-          // Membuka WhatsApp dengan pesan yang disusun
-          window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-      }, 500); // Delay 500 ms
-  });
+      
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            let message = 'Kak Admin,Saya Ingin Pesan Barangnya Dengan Alamat Rumah Saya Sebagai berikut :                                                                                                                                     ';
+            for (let [key, value] of formData.entries()) {
+                message += `${key}: ${value}%0A`;
+            }
+            window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
+        })
     </script>
   </body>
 </html>
