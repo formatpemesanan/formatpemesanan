@@ -123,8 +123,9 @@
                 message += `${key}: ${value}%0A`;
             }
           fbq('track', 'Purchase', {currency: 'IDR', value: 100000});
-            window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-        })
+          setTimeout(function() {
+          window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
+          }, 500);
     </script>
   </body>
 </html>
