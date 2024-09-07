@@ -18,7 +18,6 @@
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '4091289557769067');
       fbq('track', 'PageView');
-      fbq('track', 'Purchase');
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=4091289557769067&ev=PageView&noscript=1"
@@ -130,14 +129,7 @@
           // Membuka WhatsApp dengan pesan yang disusun
           window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
       }, 500); // Delay 500 ms
-  });     fbq('track', 'Purchase', {currency: 'IDR', value: 100000}); // Sesuaikan currency dan value
-
-      // Delay sebentar untuk memastikan tracking event tercatat sebelum redirect
-      setTimeout(function() {
-          // Membuka WhatsApp dengan pesan yang disusun
-          window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-      }, 500); // Delay 500 ms
-  });
+  });  
     </script>
   </body>
 </html>
