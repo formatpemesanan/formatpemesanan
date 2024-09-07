@@ -123,8 +123,21 @@
             for (let [key, value] of formData.entries()) {
                 message += `${key}: ${value}%0A`;
             }
-            window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
-        });
+     fbq('track', 'Purchase', {currency: 'IDR', value: 100000}); // Sesuaikan currency dan value
+
+      // Delay sebentar untuk memastikan tracking event tercatat sebelum redirect
+      setTimeout(function() {
+          // Membuka WhatsApp dengan pesan yang disusun
+          window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
+      }, 500); // Delay 500 ms
+  });     fbq('track', 'Purchase', {currency: 'IDR', value: 100000}); // Sesuaikan currency dan value
+
+      // Delay sebentar untuk memastikan tracking event tercatat sebelum redirect
+      setTimeout(function() {
+          // Membuka WhatsApp dengan pesan yang disusun
+          window.open(`https://wa.me/6285794040978?text=${message}`, '_blank');
+      }, 500); // Delay 500 ms
+  });
     </script>
   </body>
 </html>
